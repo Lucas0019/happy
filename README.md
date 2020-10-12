@@ -1,6 +1,7 @@
+<center>
  <img src="/public/images/logo.svg"/>
 
-# Happy
+# Happy</center>
 
  <img src="/public/images/capa.png"/>
 
