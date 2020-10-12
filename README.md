@@ -30,7 +30,7 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 git clone https://github.com/Lucas0019/NLW03-Discovery
 
 # Entrar no diretório
-cd proffy-discovery
+cd nlw03
 ---
 
 ```
