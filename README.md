@@ -1,6 +1,6 @@
 <H1>Happy</H1>
 
- <img src="./public/images/capa.png"/>
+ <img src="/public/images/capa.png"/>
 
 <h3>Sobre</h3>
 
