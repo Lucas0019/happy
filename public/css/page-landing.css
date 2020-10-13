@@ -6,8 +6,9 @@
 }
 
 #container {
+    padding-top: 7rem;
     margin: auto;
-    width: min(90%, 112rem);
+    width: min(90%, 100rem);
     /**11120px */
 }
 
@@ -55,7 +56,14 @@ main h1 {
 
 /* Desktop Version */
 
-@media (min-width: 760px) {
+@media (min-width: 800px) {
+    #container {
+        /* border: 10rem, 20rem; */
+        padding: 10rem, 2rem;
+        /**Shorthand Background: image repeat  position / size */
+        background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 40vw, 45rem);
+        /* background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 54vw, 54rem); */
+    }
     header {
         display: flex;
         align-items: center;
@@ -69,6 +77,8 @@ main h1 {
     }
     .location {
         text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
     }
     main h1 {
         font-weight: bold;
@@ -76,5 +86,17 @@ main h1 {
         margin: clamp(10%, 9vh, 12%) 0 4rem;
         line-height: .88;
     }
-    .visit p {}
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 30vw, 30rem);
+    }
+    .visit a {
+        margin: initial;
+    }
 }
