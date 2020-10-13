@@ -1,5 +1,8 @@
 /* Animações */
 
+
+/* Animação de reload */
+
 @keyframes up {
     from {
         opacity: 0;
@@ -16,4 +19,22 @@
     animation-name: up;
     animation-duration: 300ms;
     animation-fill-mode: backwards;
+}
+
+
+/* Animação de tela da page-orphanage */
+
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-right {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: right;
+    animation-duration: 400ms;
 }
