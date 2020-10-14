@@ -6,9 +6,9 @@
 }
 
 #container {
-    padding-top: 7rem;
+    padding: 7rem 0;
     margin: auto;
-    width: min(90%, 100rem);
+    width: min(85%, 100rem);
     /**11120px */
 }
 
