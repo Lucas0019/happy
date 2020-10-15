@@ -2,8 +2,6 @@
     <img alt="Happy" title="Happy" src="./public/images/logo-icon.png" />
 </h1>
 
-# Happy
-
  <img src="/public/images/capa.png"/>
 
 ## 📔 Sobre
