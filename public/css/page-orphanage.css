@@ -1,4 +1,41 @@
+/* Pagina orphanage */
+
 #page-orphanage {
     display: flex;
-    min-height: 100Vh;
+    min-height: 100vh;
+}
+
+aside.sidebar {
+    position: fixed;
+    height: 100%;
+    padding: 32px 24px;
+    /*3.2rem 2.4rem */
+    background: #15C3D6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside.sidebar footer button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: #12AFCB;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s
+}
+
+aside.sidebar footer button:hover {
+    background: #17D6EB;
+    border-radius: 2rem
+}
+
+.with-sidebar {
+    padding-left: 110px;
+    /* Parei aqui Aula 13/10 | 2:14:35 - Parte do mapa  */
 }
