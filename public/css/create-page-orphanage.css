@@ -1,0 +1,37 @@
+#page-create-orphanage {
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+form {
+    width: 70rem;
+    margin: 6.4rem auto;
+    background: white;
+    border: 1px solid #D3E2E5;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 8rem;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset+fieldset {
+    margin-top: 8rem;
+}
+
+fieldset legend {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5C8599;
+    font-weight: 700;
+    border-bottom: 1px solid #D3E2E5;
+    margin-bottom: 4rem;
+    padding: 2.4rem;
+}
