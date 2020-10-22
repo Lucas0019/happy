@@ -31,4 +31,16 @@ fieldset legend {
     margin-top: 2.4em
 }
 
-.input-block label {}
+.input-block label {
+    color: #8fa7b3;
+    margin-bottom: .8rem;
+    line-height: 1.5;
+}
+
+.input-block label span {
+    font-size: 1.4rem;
+    color: #8fa7b3;
+    margin-left: 2.4rem;
+    line-height: 1.5;
+    /* Aula 03 - 26:52 */
+}
