@@ -33,9 +33,8 @@
             <footer>
                 <!-- O método history.back() retorna a ultima pagina que esteve -->
                 <button onclick="history.back()">
-                        <img src="./public/images/arrow-back.svg" alt="Voltar"
-                            />
-                    </button>
+                    <img src="./public/images/arrow-back.svg" alt="Voltar" />
+                </button>
             </footer>
         </aside>
 
@@ -53,32 +52,73 @@
 
                         <footer>
                             <a href="#" id="select-point">
-                                    Clique no mapa para adicionar a localização
-                                </a>
+                                Clique no mapa para adicionar a localização
+                            </a>
                         </footer>
                     </div>
 
                     <div class="input-block">
                         <label for="name">Nome</label>
-                        <input id="name" name="name">
+                        <input id="name" name="name" required />
                     </div>
 
                     <div class="input-block">
                         <label for="about">Sobre <span>Máximo de 300
-                                    caracteres</span></label>
-                        <textarea id="about" name="about"></textarea>
+                                caracteres</span></label>
+                        <textarea id="about" name="about" required></textarea>
                     </div>
 
                     <div class="input-block">
                         <label for="whatsapp">Numero de whatsapp</label>
-                        <input id="whatsapp" name="whatsapp">
+                        <input id="whatsapp" name="whatsapp" required />
+                    </div>
+
+                    <!-- Fotos -->
+                    <div class="input-block images">
+                        <label for="images">Fotos</label>
+
+                        <div class="images-upload" id="images">
+                            <div class="new-upload">
+                                <input name="images" placeholder="Link da Foto" required />
+                                <span>
+                                    <img src="./public/images/remove-file.svg" alt="Remover imagem" />
+                                </span>
+                            </div>
+
+                        </div>
+                        <button type="button">
+                            <img src="./public/images/add-file.svg" alt="Adicionar imagem" />
+                        </button>
                     </div>
                 </fieldset>
-
 
                 <!-- Seção de Visitação -->
                 <fieldset>
                     <legend>Visitação</legend>
+
+                    <div class="input-block">
+                        <label for="instructions">Instruções
+                            <span>Máximo de 300 caracteres</span>
+                        </label>
+                        <textarea id="instructions" name="instructions" required></textarea>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="opening_hours">Horário das Visitas</label>
+                        <input id="opening_hours" name="opening_hours" required />
+                    </div>
+
+                    <div class="input-block">
+                        <label for="open_on_weekends">Atende fim de semana?</label>
+                        <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required />
+
+                        <div class="button-select">
+                            <button type="button" class="active">Sim</button>
+                            <button type="button">Não</button>
+                        </div>
+
+                        <button type="submit" class="primary-button">Confirmar</button>
+                    </div>
                 </fieldset>
             </form>
         </main>

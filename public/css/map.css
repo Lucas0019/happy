@@ -3,7 +3,7 @@
 .map-container {
     margin-top: 6.4rem;
     background: #E6F7FB;
-    border: 1px solid #B3DAE2;
+    border: 1px solid #DDE3F0;
     border-radius: 2rem;
 }
 
@@ -20,6 +20,7 @@
 .map-container footer a {
     color: #0089A5;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .map-container .leaflet-container {
