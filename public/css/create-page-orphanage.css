@@ -12,10 +12,10 @@ main {
 }
 
 .map-container .leaflet-container {
-    margin: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .map-container footer {
-    background: #f5f8fa;
+    background-color: #f5f8fa;
     border-radius: 0 0 20px 20px;
 }
