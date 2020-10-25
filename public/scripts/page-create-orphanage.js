@@ -33,4 +33,12 @@ map.on("click", (event) => {
     marker = L.marker([lat, lng], { icon }).addTo(map);
 });
 
-// Aula 03 - 1:08:16
+
+// Add campos de fotos
+
+function addPhotoField() {
+   // Pegar o container de fotos #images
+   // Pegar o container para duplicar .new-image
+   // Realizar o clone da ultima imagem adicionada
+   // Add o clone ao container de #images
+}
