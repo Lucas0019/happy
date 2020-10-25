@@ -34,6 +34,9 @@ map.on("click", (event) => {
 });
 
 
+
+//Aula 03 - 1:20:16
+
 // Add campos de fotos
 
 function addPhotoField() {
