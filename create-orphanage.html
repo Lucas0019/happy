@@ -7,10 +7,14 @@
     <title>Happy | Adicionar um orfanato</title>
 
     <!-- Mapa - API -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
 
     <!-- Complemento MAPA - API -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     <!-- ICON -->
     <link rel="icon" href="./public/images/logo-icon.png" />
 
@@ -31,7 +35,6 @@
         <aside class="animate-right sidebar">
             <img src="./public/images/map-marker.svg" alt="Happy" />
             <footer>
-                <!-- O método history.back() retorna a ultima pagina que esteve -->
                 <button onclick="history.back()">
                     <img src="./public/images/arrow-back.svg" alt="Voltar" />
                 </button>
@@ -41,10 +44,8 @@
         <main class="animate-appear with-sidebar">
             <form action="">
                 <fieldset>
-                    <!-- Seção de Dados -->
                     <legend>Dados</legend>
 
-                    <!-- Mapa -->
                     <div class="map-container">
                         <div id="mapid"></div>
                         <input type="hidden" name="lat" />
@@ -63,46 +64,42 @@
                     </div>
 
                     <div class="input-block">
-                        <label for="about">Sobre <span>Máximo de 300 caracteres</span></label>
+                        <label for="about">Sobre <span>Máximo de 300
+                                caracteres</span></label>
                         <textarea id="about" name="about" required></textarea>
                     </div>
 
                     <div class="input-block">
-                        <label for="whatsapp">Numero de whatsapp</label>
+                        <label for="whatsapp">Número de WhatsApp</label>
                         <input id="whatsapp" name="whatsapp" required />
                     </div>
 
-                    <!-- Fotos -->
                     <div class="input-block images">
                         <label for="images">Fotos</label>
-
                         <div class="images-upload" id="images">
                             <div class="new-upload">
-                                <input name="images" placeholder="Link da Foto" required />
-                                <span>
-                                    <img src="./public/images/remove-file.svg" alt="Remover imagem" />
+                                <input name="images" placeholder="Cole o link da foto aqui" required />
+                                <span onclick="deleteField(event)">
+                                    <img src="./public/images/remove-file.svg" alt="Remover Foto" />
                                 </span>
                             </div>
                         </div>
                         <button onclick="addPhotoField()" type="button">
-                            <img src="./public/images/add-file.svg" alt="Adicionar imagem" />
+                            <img src="./public/images/add-file.svg" alt="Adicionar foto" />
                         </button>
                     </div>
                 </fieldset>
 
-                <!-- Seção de Visitação -->
                 <fieldset>
                     <legend>Visitação</legend>
 
                     <div class="input-block">
-                        <label for="instructions">Instruções
-                            <span>Máximo de 300 caracteres</span>
-                        </label>
+                        <label for="instructions">Instruções</label>
                         <textarea id="instructions" name="instructions" required></textarea>
                     </div>
 
                     <div class="input-block">
-                        <label for="opening_hours">Horário das Visitas</label>
+                        <label for="opening_hours">Horário das visitas</label>
                         <input id="opening_hours" name="opening_hours" required />
                     </div>
 
@@ -111,11 +108,11 @@
                         <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required />
 
                         <div class="button-select">
-                            <button type="button" class="active">Sim</button>
-                            <button type="button">Não</button>
+                            <button data-value="1" onclick="toggleSelect(event)" type="button" class="active">Sim</button>
+                            <button data-value="0" onclick="toggleSelect(event)" type="button">Não</button>
                         </div>
 
-                        <button  type="submit" class="primary-button">Confirmar</button>
+                        <button type="submit" class="primary-button">Confirmar</button>
                     </div>
                 </fieldset>
             </form>

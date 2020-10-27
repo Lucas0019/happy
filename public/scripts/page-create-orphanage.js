@@ -35,13 +35,70 @@ map.on("click", (event) => {
 
 
 
-//Aula 03 - 1:20:16
-
 // Add campos de fotos
-
 function addPhotoField() {
    // Pegar o container de fotos #images
+    const container = document.querySelector("#images")
+
    // Pegar o container para duplicar .new-image
+   const fieldsContainer = document.querySelectorAll(".new-upload")
+
    // Realizar o clone da ultima imagem adicionada
+   const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true)
+
+   //Não posso permitir que seja adicionado sem o campo está preenchido
+   const input = newFieldContainer.children[0]
+
+   if (input.value === "") {
+       return ;
+   }
+
+   //Limpar o campo antes de adicionar ao container de imagens
+   input.value=""
+
    // Add o clone ao container de #images
+   container.appendChild(newFieldContainer)
 }
+
+//Função de exclusão das imagens
+function deleteField(event) {
+    const span = event.currentTarget
+
+    const fieldsContainer = document.querySelectorAll('.new-upload')
+
+    // console.log(fieldsContainer.length);
+
+    if(fieldsContainer.length <= 1) {
+        //Limpar o valor do campo
+        span.parentNode.children[0].value = ""
+        return ;
+    }
+
+    //Deletar o valor do campo
+    span.parentNode.remove()
+}
+
+//Troca do Sim e não 
+function toggleSelect(event) {
+
+    //Retirar a classe .active (dos botões)
+    document.querySelectorAll('.button-select button')
+    .forEach((button) => button.classList.remove('active'))
+
+    //Adicionar a classe . active no botão clicado
+     const button = event.currentTarget
+     button.classList.add('active')
+
+    //atualizar meu input hidden com o valor selecionado
+    const input = document.querySelector('[name="open_on_weekends"]')
+    input.value = button.dataset.value
+
+  
+}
+
+
+
+
+
+
+
